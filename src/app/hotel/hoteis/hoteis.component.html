@@ -1,0 +1,153 @@
+<body>
+  <div class="funcao">
+    <button class="button" mat-mini-fab color="" aria-label="Example icon button with a menu icon">
+      <mat-icon>hotel</mat-icon>
+      Hoteis
+    </button>
+
+    <button class="button" mat-mini-fab color="secondary" aria-label="Example icon button with a menu icon">
+      <mat-icon>flight_takeoff</mat-icon>
+      Voos
+    </button>
+
+    <button class="button" mat-mini-fab color="secondary" aria-label="Example icon button with a menu icon">
+      <mat-icon>train</mat-icon>
+      Metros
+    </button>
+
+    <button class="button" mat-mini-fab color="secondary" aria-label="Example icon button with a menu icon">
+      <mat-icon>local_taxi</mat-icon>
+      Taxis
+    </button>
+  </div>
+
+
+
+  <mat-grid-list cols="3" rowHeight="2:2">
+    <mat-grid-tile>
+      <button class="hoteis">
+        <h1>Hotel Presidente</h1>
+        <img mat-card-image-sml
+          src="https://media-cdn.tripadvisor.com/media/photo-s/16/1a/ea/54/hotel-presidente-4s.jpg" />
+        <br>
+        <div class="estrela-e-botao">
+          <div class="estrela">
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+          </div>
+        </div>
+    </button>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card>
+        <div class="registro">
+          <div class="inputs">
+            <h2>Registro</h2>
+            <h4>Seu Nome</h4>
+            <mat-form-field appearance="fill">
+              <mat-label>Nome completo</mat-label>
+              <input matInput />
+            </mat-form-field>
+            <h4>Quantidade de Pessoas</h4>
+            <mat-form-field appearance="fill">
+              <mat-label>Pessoas</mat-label>
+              <mat-select>
+                <mat-option *ngFor="let pessoa of pessoas" [value]="pessoa.value">
+                  {{ pessoa.viewValue }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+
+            <h4>Local de Destino</h4>
+            <mat-form-field appearance="fill">
+              <mat-label> Hoteis </mat-label>
+              <mat-select>
+                <mat-option *ngFor="let hotel of hoteis" [value]="hotel.valor">
+                  {{ hotel.valoraVer }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            <button mat-raised-button color="primary" class="botao">
+              Criar Conta
+            </button>
+          </div>
+        </div>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <button class="hoteis">
+        <h1>Refúgio Harmonia</h1>
+        <img mat-card-image-sml
+          src="https://refugiodaharmonia.com.br/wp-content/uploads/2021/06/3piscina-por-do-sol-e-crepuscular-10-550x367.jpg" />
+        <br>
+        <div class="estrela-e-botao">
+          <div class="estrela">
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star_half</mat-icon>
+          </div>
+
+        </div>
+    </button>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <mat-grid-list cols="3" rowHeight="3:2.1">
+    <mat-grid-tile>
+      <button class="hoteis">
+      <h1>Focus Hotel</h1>
+        <img mat-card-image-sml
+          src="https://www.focus.jor.br/wp-content/uploads/2022/04/4018fc36-a1de-429f-a87e-2b315abf46b3-550x367.jpg" />
+        <br>
+        <div class="estrela-e-botao">
+          <div class="estrela">
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star_border</mat-icon>
+          </div>
+        </div>
+      </button>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <button class="hoteis">
+      <h1>Novotel</h1>
+        <img mat-card-image-sml src="https://conteudo.solutudo.com.br/wp-content/uploads/2021/11/novotel3.jpg" />
+        <br>
+        <div class="estrela-e-botao">
+          <div class="estrela">
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star_border</mat-icon>
+          </div>
+        </div>
+      </button>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <button class="hoteis">
+        <h1>Wyndham</h1>
+        <img mat-card-image-sml
+          src="https://exame.com/wp-content/uploads/2020/08/54221_building_twilight-1-e1596563111183-1.jpg" />
+        <br>
+        <div class="estrela-e-botao">
+          <div class="estrela">
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+          </div>
+        </div>
+      </button>
+    </mat-grid-tile>
+  </mat-grid-list>
+</body>

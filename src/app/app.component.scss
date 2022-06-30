@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size:larger;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.botao{
+  color: white;
+}
+
+img{
+  max-height: 3.3vw;
+  min-width: 3.3vw;
+}
+
+.mat-toolbar-row{
+  display: float;
+  justify-content: center;
+  padding: 0;
+}
+
+.img-mat{
+  justify-content: space-between;
+}
+
+.mat-toolbar{
+  background-color:black;
+}
+
+
+
+

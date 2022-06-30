@@ -1,0 +1,87 @@
+h1 {
+  font-size: x-large;
+  font-weight: 500;
+  text-align: start;
+}
+
+.funcao {
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border-radius: 0%;
+}
+
+.button {
+  margin-right: 2%;
+  width: 8%;
+  border: 1% solid;
+  border-radius: 999px;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+img {
+  max-height: 15vw;
+  min-width: 20vw;
+  border-radius: 5px;
+}
+
+.hoteis {
+  text-align: start;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 2%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.hoteis:hover {
+  border-color: lightblue;
+  transform: scale(1.1);
+}
+
+.button2 {
+  float: inline-end;
+}
+
+.estrela {
+  color: gold;
+}
+
+.estrela-e-botao {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cor {
+  background-color: black;
+}
+
+.botao {
+  border-radius: 0%;
+  transition: all 0.2s;
+  border: 2.5px solid transparent;
+}
+
+.botao:hover {
+  border: 2.5px solid lightblue;
+  border-radius: 8%;
+}
+
+.inputs {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.botao {
+  padding: 15px;
+  border-radius: 5%;
+  border: none;
+}
